@@ -1,13 +1,15 @@
 import { Component } from "react";
 import BarraNavegacao from "./barraNavegacao";
 import Cadastros from "./cadastros/cadastros";
-import CLiente from "./clientes/Clientes";
+import Cliente from "./clientes/Clientes";
 import FormularioCadastroCliente from "./clientes/formularioCadastroCliente";
 import ListaCliente from "./clientes/listaCliente";
 import CadastroProdutos from "./produtos/cadastroProdutos"
 import ListaProduto from "./produtos/listaProduto";
+import Produto from "./produtos/produtos";
 import CadastroServicos from "./servicos/cadastroServicos";
 import ListaServicos from "./servicos/listaServicos";
+import Servicos from "./servicos/servicos";
 
 type state = {
     tela: string
@@ -33,14 +35,14 @@ export default class Roteador extends Component<{}, state> {
     }
 
     render() {
-        let barraNavegacao = <BarraNavegacao seletorView={this.selecionarView} tema="purple lighten-4" botoes={['Home', 'Clientes', 'Produtos', 'Serviços']} />
+        let barraNavegacao = <BarraNavegacao seletorView={this.selecionarView} tema="pink lighten-2" botoes={['Home', 'Clientes', 'Produtos', 'Serviços']} />
         
           //para ir para tela de cadastro de cliente
         if (this.state.tela === 'Home'){
             return (
                 <>
                     {barraNavegacao}
-                    <CLiente tema="purple lighten-4" />
+                    <Cadastros tema="pink lighten-2" />
                 </>
             )
         }
@@ -50,7 +52,7 @@ export default class Roteador extends Component<{}, state> {
             return (
                 <>
                     {barraNavegacao}
-                    <ListaCliente tema="purple lighten-4" />
+                    <ListaCliente tema="pink lighten-2" />
                 </>
             )
         }
@@ -60,7 +62,7 @@ export default class Roteador extends Component<{}, state> {
             return(
                 <>
                 {barraNavegacao}
-                <ListaProduto tema="purple lighten-4" />
+                <ListaProduto tema="pink lighten-2" />
                 </>
             )
         }
@@ -71,7 +73,7 @@ export default class Roteador extends Component<{}, state> {
             return(
                 <>
                 {barraNavegacao}
-                <ListaServicos tema="purple lighten-4" />
+                <ListaServicos tema="pink lighten-2" />
                 </>
             )
         }

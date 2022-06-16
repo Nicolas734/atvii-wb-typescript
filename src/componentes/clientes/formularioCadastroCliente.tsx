@@ -10,7 +10,7 @@ type props = {
 export default class FormularioCadastroCliente extends Component<props> {
     
     render() {
-        let estiloBotao = `btn waves-effect waves-light pink lighten-2 ${this.props.tema}`
+        let estiloBotao = `btn waves-effect waves-light pink lighten-1 ${this.props.tema}`
         return (
             <div className="container">
                 <div className="row ">
@@ -60,7 +60,7 @@ export default class FormularioCadastroCliente extends Component<props> {
                         </div>
                         
                         <div className="row">
-                            <div className="col s12 center">
+                            <div className="col s12 center ">
                                 <button className={estiloBotao} type="submit" name="action">Cadastrar
                                 </button>
                             </div>

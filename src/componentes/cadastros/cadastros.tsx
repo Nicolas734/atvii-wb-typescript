@@ -2,13 +2,19 @@
 import { Component } from "react";
 import 'materialize-css/dist/css/materialize.min.css'
 import "../cadastros/cadastros.css"
-
+import M from 'materialize-css'
 
 type props = {
     tema: string
 }
 
 export default class Cadastros extends Component<props> {
+    componentDidMount(){
+        console.log(M);
+        M.AutoInit();
+    }        
+    
+
     render() {
         let estilo = `collection-item active  pink lighten-2 ${this.props.tema}`
         return (
