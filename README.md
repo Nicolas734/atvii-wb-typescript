@@ -2,8 +2,8 @@
 <p align="center">
 <h1 align="center"> FATEC Profº Jessen Vidal, SJC - 2º Semestre DSM </h1>
 
-<h2> 📑 Atividade 1 - Técnica de Programação I </h2>
-  -  Desenvolver uma agenda de clientes para o grupo WB. Esta agenda, inicialmente, será  um  sistema  do  tipo  cli  (command-line  interface),  ou  seja,  deverá  funcionar  sem  uma  interface gráfica muito elaborada, apenas pela linha de comando. Além disso, cada unidade terá sua própria agenda, os dados não serão compartilhados entre as unidades do grupo WB.
+<h2> 📑 Atividade 2 - Técnica de Programação I </h2>
+  -  Desenvolver  e atualizar o sistema com uma GUI moderna e que funcione tanto em navegadores comuns quanto em navegadores de dispositivos móveis, como celularese/ou tabletspor exemplo.Neste primeiro momento, não é necessário a comunicação com o Back-end.
 
 <div id='equipe'>
 <h2> 🎓 Equipe de Desenvolvimento </h2>
