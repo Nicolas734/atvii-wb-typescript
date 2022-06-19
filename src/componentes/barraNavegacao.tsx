@@ -3,11 +3,11 @@ import "../componentes/barraNavegacao.css"
 import { Component } from "react";
 import 'materialize-css/dist/css/materialize.min.css'
 import M from 'materialize-css'
+import { Link } from "react-router-dom";
 
 type props = {
     tema: string,
-    botoes: string[],
-    seletorView: Function
+    botoes: string[]
 }
 
 export default class BarraNavegacao extends Component<props> {
@@ -28,7 +28,7 @@ export default class BarraNavegacao extends Component<props> {
             return <></>
         } else {
             let lista = this.props.botoes.map(valor =>
-                <li key={valor}><a onClick={(e) => this.props.seletorView(valor, e)}>{valor}</a></li>
+                <li key={valor}><Link to = {valor} >{valor}</Link></li> 
             )
             return lista
         }
@@ -40,7 +40,7 @@ export default class BarraNavegacao extends Component<props> {
             <>
                 <nav className={estilo}>
                     <div className="nav-wrapper  pink lighten-2">
-                        <a className="brand-logo center"> N²R</a>
+                        <a className="brand-logo center"> WB</a>
                         <a data-target="mobile-menu" className="sidenav-trigger"><i className="material-icons">menu</i></a>
                         <ul className="right hide-on-med-and-down">
                             {this.gerarListaBotoes()}

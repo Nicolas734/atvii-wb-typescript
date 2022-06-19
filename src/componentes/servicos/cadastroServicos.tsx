@@ -17,34 +17,26 @@ export default class CadastroServicos extends Component<props> {
                     <form className="col s12 formServ ">
                         <div className="row">
                             <div className="input-field col s6 ">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">Nome do Serviços</label>
+                                <input id="nomeServ" type="text" className="validate" />
+                                <label htmlFor="nomeServ">Nome do Serviços</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" className="validate" />
-                                <label htmlFor="last_name">Descrição do serviço</label>
+                                <input id="descricaoServ" type="text" className="validate" />
+                                <label htmlFor="descricaoServ">Descrição do serviço</label>
                             </div>                           
                         </div>
 
                         <div className="row">
                             <div className="input-field col s6 ">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">Valor do Serviço</label>
+                                <input id="valorServ" type="text" className="validate" />
+                                <label htmlFor="valorServ">Valor do Serviço</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" className="validate" />
-                                <label htmlFor="last_name">Codigo de indentificação do serviço </label>
+                                <input id="IDserv" type="text" className="validate" />
+                                <label htmlFor="IDserv">Codigo de indentificação do serviço </label>
                             </div>                           
                         </div>
-
-                        <div className="row">
-                            <div className="input-field col s6 ">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">Código de indentificação do produto</label>
-                            </div>
-                                                       
-                        </div>
-                        
+                                                                            
                         <div className="row">
                             <div className="col s12 center">
                                 <button className={estiloBotao} type="submit" name="action">Cadastrar

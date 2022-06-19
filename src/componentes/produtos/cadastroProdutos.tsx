@@ -17,32 +17,31 @@ export default class CadastroProdutos extends Component<props> {
                     <form className="col s12 formProd">
                         <div className="row">
                             <div className="input-field col s6 ">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">Nome do produto</label>
+                                <input id="first_name2" type="text" />
+                                <label htmlFor="first_name2">Nome do produto</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" className="validate" />
-                                <label htmlFor="last_name">Descrição do produto</label>
+                                <input id="descricao" type="text" />
+                                <label htmlFor="descricao">Descrição do produto</label>
                             </div>                           
                         </div>
 
                         <div className="row">
                             <div className="input-field col s6 ">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">Categoria do produto</label>
+                                <input id="categoria" type="text" />
+                                <label htmlFor="categoria">Categoria do produto</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" className="validate" />
-                                <label htmlFor="last_name">Valor do produto</label>
+                                <input id="valor" type="text" />
+                                <label htmlFor="valor">Valor do produto</label>
                             </div>                           
                         </div>
 
                         <div className="row">
                             <div className="input-field col s6 ">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">Código de indentificação do produto</label>
+                                <input id="idprod" type="text" />
+                                <label htmlFor="idprod">ID do produto</label>
                             </div>
-                                                       
                         </div>
                         
                         <div className="row">

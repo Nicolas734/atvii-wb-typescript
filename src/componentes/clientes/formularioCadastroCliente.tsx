@@ -11,6 +11,7 @@ export default class FormularioCadastroCliente extends Component<props> {
     
     render() {
         let estiloBotao = `btn waves-effect waves-light pink lighten-1 ${this.props.tema}`
+        
         return (
             <div className="container">
                 <div className="row ">
@@ -21,41 +22,41 @@ export default class FormularioCadastroCliente extends Component<props> {
                                 <label htmlFor="first_name">Nome</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" className="validate" />
-                                <label htmlFor="last_name">Nome social</label>
+                                <input id="nomeSocial" type="text" className="validate" />
+                                <label htmlFor="nomeSocial">Nome social</label>
                             </div>                           
                         </div>
 
                         <div className="row">
                             <div className="input-field col s6 ">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">Gênero</label>
+                                <input id="genero" type="text" className="validate" />
+                                <label htmlFor="genero">Gênero</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" className="validate" />
-                                <label htmlFor="last_name">(DDD) Telefone</label>
+                                <input id="telefone" type="text" className="validate" />
+                                <label htmlFor="telefone">(DDD) Telefone</label>
                             </div>                           
                         </div>
 
                         <div className="row">
                             <div className="input-field col s6 ">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">CPF</label>
+                                <input id="cpf" type="text" className="validate" />
+                                <label htmlFor="cpf">CPF</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" className="validate" />
-                                <label htmlFor="last_name">Data de emissão CPF</label>
+                                <input id="dataCPF" type="text" className="validate" />
+                                <label htmlFor="dataCPF">Data de emissão CPF</label>
                             </div>                           
                         </div>
 
                         <div className="row">
                             <div className="input-field col s6 ">
-                                <input id="first_name" type="text" className="validate" />
-                                <label htmlFor="first_name">RG</label>
+                                <input id="RG" type="text" className="validate" />
+                                <label htmlFor="RG">RG</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="last_name" type="text" className="validate" />
-                                <label htmlFor="last_name">Data de emissão RG</label>
+                                <input id="dataRG" type="text" className="validate" />
+                                <label htmlFor="dataRG">Data de emissão RG</label>
                             </div>                           
                         </div>
                         

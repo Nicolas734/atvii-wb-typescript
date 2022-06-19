@@ -3,6 +3,7 @@ import { Component } from "react";
 import 'materialize-css/dist/css/materialize.min.css'
 import "../cadastros/cadastros.css"
 import M from 'materialize-css'
+import { Link } from "react-router-dom";
 
 type props = {
     tema: string
@@ -20,9 +21,9 @@ export default class Cadastros extends Component<props> {
         return (
             <div className="containerCadastro">
                 <div className="collection">
-                    <a className="collection-item">Cadastrar Cliente</a>
-                    <a className="collection-item">Cadastrar Produtos</a>
-                    <a className="collection-item">Cadastrar Serviços</a>
+                    <Link to ={'/CadastroCliente'} className="collection-item pointer">Cadastrar Cliente </Link>
+                    <Link to ={'/CadastroProduto'} className="collection-item pointer">Cadastrar Produtos</Link>
+                    <Link to ={'/CadastroServico'} className="collection-item pointer">Cadastrar Serviços</Link>
                 </div>
             </div>
         )

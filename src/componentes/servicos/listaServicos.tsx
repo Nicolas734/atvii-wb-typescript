@@ -2,6 +2,7 @@
 import { Component } from "react";
 import 'materialize-css/dist/css/materialize.min.css'
 import '../servicos/cadastroServicos.css'
+import { Link } from "react-router-dom";
 
 
 type props = {
@@ -31,10 +32,10 @@ export default class ListaServicos extends Component<props> {
                 </div>
 
                 <div className="collection">
-                    <a className="collection-item">Serviços 1</a>
-                    <a className="collection-item">Serviços 2</a>
-                    <a className="collection-item">Serviços 3</a>
-                    <a className="collection-item">Serviços 4</a>
+                    <Link to = {'/Servico'} className="collection-item">Serviços 1</Link>
+                    <Link to = {'/Servico'} className="collection-item">Serviços 2</Link>
+                    <Link to = {'/Servico'} className="collection-item">Serviços 3</Link>
+                    <Link to = {'/Servico'} className="collection-item">Serviços 4</Link>
                 </div>
             </div>
         )

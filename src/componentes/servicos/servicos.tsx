@@ -9,7 +9,7 @@ type props = {
     tema: string
 }
 
-export default class servicos extends Component<props> {
+export default class Servicos extends Component<props> {
     
     componentDidMount(){
         console.log(M);

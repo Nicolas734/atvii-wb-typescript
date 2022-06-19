@@ -3,6 +3,7 @@ import { Component } from "react";
 import 'materialize-css/dist/css/materialize.min.css'
 import '../clientes/cadastroCliente.css'
 import M from 'materialize-css'
+import { Link } from "react-router-dom";
 
 
 type props = {
@@ -37,10 +38,10 @@ export default class ListaCliente extends Component<props> {
 
 
                 <div className="collection">
-                    <a className="collection-item">Cliente 1</a>
-                    <a className="collection-item">Cliente 2</a>
-                    <a className="collection-item">Cliente 3</a>
-                    <a className="collection-item">Cliente 4</a>
+                    <Link to ={'/Cliente'} className="collection-item pointer">Cliente 1</Link>
+                    <Link to ={'/Cliente'} className="collection-item">Cliente 2</Link>
+                    <Link to ={'/Cliente'} className="collection-item">Cliente 3</Link>
+                    <Link to ={'/Cliente'} className="collection-item">Cliente 4</Link>
                 </div>
             </div>
         )
