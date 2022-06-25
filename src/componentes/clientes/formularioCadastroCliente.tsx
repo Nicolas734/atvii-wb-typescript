@@ -8,13 +8,17 @@ type props = {
 }
 
 export default class FormularioCadastroCliente extends Component<props> {
-    
+    componentDidMount(){
+        console.log(M);
+        M.AutoInit();
+    } 
     render() {
         let estiloBotao = `btn waves-effect waves-light pink lighten-1 ${this.props.tema}`
         
         return (
-            <div className="container">
+            <div className="containerCli">
                 <div className="row ">
+                    <h4>Cadastro do Cliente</h4>
                     <form className="col s12 formCli">
                         <div className="row">
                             <div className="input-field col s6 ">
@@ -29,12 +33,17 @@ export default class FormularioCadastroCliente extends Component<props> {
 
                         <div className="row">
                             <div className="input-field col s6 ">
-                                <input id="genero" type="text" className="validate" />
-                                <label htmlFor="genero">Gênero</label>
+                                <select>
+                                    <option value="" disabled selected>M: Masc. / F: Fem. / N: Não Infor.</option>
+                                    <option value="1">M</option>
+                                    <option value="2">F</option>
+                                    <option value="3">N</option>
+                                </select>
+                                <label>Gênero</label>
                             </div>
                             <div className="input-field col s6">
-                                <input id="telefone" type="text" className="validate" />
-                                <label htmlFor="telefone">(DDD) Telefone</label>
+                                <input id="Telefone" type="text" className="validate"/>
+                                <label htmlFor="Telefone">(DDD) Telefone</label>
                             </div>                           
                         </div>
 
@@ -43,21 +52,10 @@ export default class FormularioCadastroCliente extends Component<props> {
                                 <input id="cpf" type="text" className="validate" />
                                 <label htmlFor="cpf">CPF</label>
                             </div>
-                            <div className="input-field col s6">
-                                <input id="dataCPF" type="text" className="validate" />
-                                <label htmlFor="dataCPF">Data de emissão CPF</label>
-                            </div>                           
-                        </div>
-
-                        <div className="row">
                             <div className="input-field col s6 ">
                                 <input id="RG" type="text" className="validate" />
                                 <label htmlFor="RG">RG</label>
-                            </div>
-                            <div className="input-field col s6">
-                                <input id="dataRG" type="text" className="validate" />
-                                <label htmlFor="dataRG">Data de emissão RG</label>
-                            </div>                           
+                            </div>                          
                         </div>
                         
                         <div className="row">

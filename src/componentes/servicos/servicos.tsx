@@ -3,6 +3,7 @@ import React, { Component } from "react";
 import 'materialize-css/dist/css/materialize.min.css'
 import '../clientes/cadastroCliente.css'
 import M from 'materialize-css'
+import { Link } from "react-router-dom";
 
 
 type props = {
@@ -21,40 +22,41 @@ export default class Servicos extends Component<props> {
         let estilo = `collection-item active  pink lighten-2 ${this.props.tema}`
         return (
             <div className="containerServ">
-             <h2 className="nomeServ">Escova Progressiva</h2>
-                <ul className="collapsible popout">
-                    {/* Serviços */}
-                    <li>
-                        <div className="collapsible-header"><i className="material-icons">work</i>Serviços</div>
-                        <div className="collapsible-body">
+        <h2 className="nomeServ">Escova</h2>
+            <ul className="collapsible popout">
+                {/* Serviços */}
+                <li>
+                    <div className="collapsible-header home"><i className="material-icons">work</i>Informações do Serviço</div>
+                    <div className="collapsible-body">
 
-                            <div className="input-field col s12">
-                                <input id="first_name" type="text" className="validate"/>
-                                <label className="active" htmlFor="textarea1">Descrição do serviço</label>
-                            </div>
-
-                            <div className="input-field col s12">
-                                <input id="first_name" type="text" className="validate"/>
-                                <label className="active" htmlFor="first_name">Valor do serviço</label>
-                            </div>
-
-                            <div className="input-field col s12">
-                                <input id="first_name" type="text" className="validate"/>
-                                <label className="active" htmlFor="first_name">Código de identificação</label>
-                            </div>
-
+                        <div className="input-field col s12">
+                            <input disabled id="Descricao_servico" type="text"  className="validate"/>
+                            <label className="active" htmlFor="Descricao_servico">Descrição do serviço</label>
                         </div>
-                    </li>
-                </ul>
 
-                <div className="row">
-                    <div className="col s12 center">
-                        <button className={estiloBotao} type="submit" name="action">Atualizar
-                        </button>
+                        <div className="input-field col s12">
+                            <input disabled id="Valor_servico" type="text"  className="validate"/>
+                            <label className="active" htmlFor="Valor_servico">Valor do serviço</label>
+                        </div>
+
+                        <div className="input-field col s12">
+                            <input disabled id="Codigo_identificacao" type="text"  className="validate"/>
+                            <label className="active" htmlFor="Codigo_identificacao">Código de identificação</label>
+                        </div>
+
                     </div>
-                </div>
+                </li>
+            </ul>
 
+            <div className="row">
+                <div className="col s12 center">
+                    <Link to ="/AtualizaServico">
+                    <button className="btn waves-effect pink lighten-2 button botaoAtualiza" type="submit" name="action">Atualizar</button>
+                    </Link>
+                    <button className="btn waves-effect pink lighten-2 button" type="submit" name="action">Deletar Serviço</button>
+                </div>
             </div>
-        )
-    }
-}
+
+        </div>
+    )
+}}

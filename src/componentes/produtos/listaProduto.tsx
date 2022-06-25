@@ -19,16 +19,8 @@ export default class ListaProduto extends Component<props> {
         let estilo = `collection-item active  pink lighten-2 ${this.props.tema}`
         return (
             <div className="containerProd">
-
-                <div className="input-field col s12 opcao">
-                    <select >
-                        <option  value="">Opções</option>
-                        <option value="1">Produtos mais consumidos</option>
-                        <option value="2">Produtos mais consumidos (gênero) </option>
-                    </select>
-                </div>
-
-                <div className="collection">
+                <h2>Listagem dos Produtos</h2>
+                <div className="collection home">
                     <Link to = {'/Produto'} className="collection-item">Produto 1</Link>
                     <Link to = {'/Produto'} className="collection-item">Produto 2</Link>
                     <Link to = {'/Produto'} className="collection-item">Produto 3</Link>

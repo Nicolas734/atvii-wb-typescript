@@ -14,7 +14,8 @@ export default class CadastroServicos extends Component<props> {
         return (
             <div className="containerServ">
                 <div className="row ">
-                    <form className="col s12 formServ ">
+                <h4>Cadastro de Serviço</h4>
+                    <form className="col s12 formServ">
                         <div className="row">
                             <div className="input-field col s6 ">
                                 <input id="nomeServ" type="text" className="validate" />
@@ -30,11 +31,7 @@ export default class CadastroServicos extends Component<props> {
                             <div className="input-field col s6 ">
                                 <input id="valorServ" type="text" className="validate" />
                                 <label htmlFor="valorServ">Valor do Serviço</label>
-                            </div>
-                            <div className="input-field col s6">
-                                <input id="IDserv" type="text" className="validate" />
-                                <label htmlFor="IDserv">Codigo de indentificação do serviço </label>
-                            </div>                           
+                            </div>                                                    
                         </div>
                                                                             
                         <div className="row">

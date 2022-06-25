@@ -14,7 +14,8 @@ export default class CadastroProdutos extends Component<props> {
         return (
             <div className="containerProd">
                 <div className="row ">
-                    <form className="col s12 formProd">
+                    <h4>Cadastro de Produto</h4>
+                    <form className="col s12 formProd home">
                         <div className="row">
                             <div className="input-field col s6 ">
                                 <input id="first_name2" type="text" />
@@ -27,21 +28,11 @@ export default class CadastroProdutos extends Component<props> {
                         </div>
 
                         <div className="row">
-                            <div className="input-field col s6 ">
-                                <input id="categoria" type="text" />
-                                <label htmlFor="categoria">Categoria do produto</label>
-                            </div>
+
                             <div className="input-field col s6">
                                 <input id="valor" type="text" />
                                 <label htmlFor="valor">Valor do produto</label>
                             </div>                           
-                        </div>
-
-                        <div className="row">
-                            <div className="input-field col s6 ">
-                                <input id="idprod" type="text" />
-                                <label htmlFor="idprod">ID do produto</label>
-                            </div>
                         </div>
                         
                         <div className="row">

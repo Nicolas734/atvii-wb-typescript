@@ -20,18 +20,8 @@ export default class ListaServicos extends Component<props> {
         let estilo = `collection-item active pink lighten-1 ${this.props.tema}`
         return (
             <div className="containerServ">
-
-                <div className="input-field col s12 opcao">
-                    <select>
-                        
-                        <option value="">Opções</option>
-                        <option value="1">Serviços mais consumidos</option>
-                        <option value="2">Serviços mais consumidos (gênero) </option>
-                        
-                    </select>
-                </div>
-
-                <div className="collection">
+                <h2>Listagem dos Serviços</h2>
+                <div className="collection home">
                     <Link to = {'/Servico'} className="collection-item">Serviços 1</Link>
                     <Link to = {'/Servico'} className="collection-item">Serviços 2</Link>
                     <Link to = {'/Servico'} className="collection-item">Serviços 3</Link>
